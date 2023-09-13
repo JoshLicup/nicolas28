@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        /* Add this inline CSS to set the background color */
+        body {
+            background-color: #f5f5f5;
+            margin: 0; /* Remove default margin */
+            font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+        }
+        
+        /* Style for the header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex; /* Use flexbox to align logo and navigation */
+            justify-content: space-between; /* Align logo to the left and navigation to the right */
+            align-items: center; /* Vertically center content */
+            width: 100%; /* Make the header full width */
+        }
+
+        /* Style for the footer */
+        footer {
+            background-color: #333; /* Background color for the footer */
+            color: white;
+            padding: 10px 0;
+            text-align: center; /* Center align the content in the footer */
+        }
+        
+        header h1, header p, footer p {
+            margin: 0;
+            font-size: 24px; /* Increase the font size for both title and additional text */
+        }
+
+        /* Style for the navigation menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px; /* Increase the font size for the navigation links */
+        }
+
+        /* Style for the logo */
+        .logo {
+            width: 100px; /* Adjust the width of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 20px; /* Add spacing to the left of the logo */
+        }
+
+        /* Style for the card with left margin */
+        .card {
+            margin-left: 20px; /* Add a left margin to the card */
+            width: 18rem;
+        }
+
+        /* Style for the center image */
+        .center-image {
+            display: block;
+            margin: 0 auto; /* Center the image horizontally */
+            margin-top: 20px; /* Add top margin to the image */
+        }
+
+        /* Style for the big text */
+        .big-text {
+            font-size: 36px; /* Adjust the font size */
+            text-align: center; /* Center the text horizontally */
+            margin-top: 20px; /* Add top margin to the text */
+        }
+
+        /* Style for the Precision 6 text */
+        .precision-text {
+            font-family: Helvetica, Arial, sans-serif; /* Set font to Helvetica */
+            text-align: center; /* Center the text horizontally */
+            font-weight: bold; /* Make the text bold */
+            margin-left: 10px; /* Add left margin to align with the pictures */
+        }
+
+        /* Style for left and right images in a row */
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-row img {
+            width: 100%; /* Set the width to 100% to match the middle image */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 593px; /* Set a maximum width to match the middle image */
+            margin: 0 10px; /* Add margin between images */
+            transition: filter 0.3s; /* Smooth transition for the filter property */
+        }
+
+        /* Apply grayscale effect on hover */
+        .image-row img:hover {
+            filter: grayscale(100%); /* Change to grayscale when hovering */
+        }
+
+        /* Style for the Precision 6 text container */
+        .precision-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .precision-container .precision-text {
+            margin: 0 10px; /* Add margin between "Precision 6" texts */
+        }
+
+        /* Style for the image links */
+        .image-link {
+            text-decoration: none; /* Remove underlines from the links */
+            cursor: pointer; /* Change cursor to a pointer when hovering */
+        }
+		 footer {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        position: absolute; /* Set the position to absolute */
+        bottom: 0; /* Stick the footer to the bottom */
+        width: 100%; /* Make the footer full width */
+    }
+
+    footer p {
+        margin: 30; /* Remove the default margin */
+        font-size: 18px;
+		
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\Administrator\Desktop\Website\Official-SSCR-logo.png" alt="My Shopping Logo" class="logo"> <!-- Add your logo here -->
+        <h1>Welcome to My Website</h1>
+        <p>Christian Jay Nicolas</p>
+        <p>2nd Year BSHM-T1</p>
+        <nav>
+            <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="home.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Add the images in a row -->
+        <div class="image-row">
+            <!-- Left image -->
+            <a href="https://www.adidas.com.ph/harden-stepback-3-shoes/GY6416.html" class="image-link">
+                <img src="C:\Users\Administrator\Downloads\Untitled design (6).png" alt="Left Image">
+            </a>
+            
+            <!-- Center image -->
+            <a href="https://www.nike.com/ph/t/precision-6-basketball-shoes-h5907m" class="image-link">
+                <img src="https://i.pinimg.com/564x/d9/d7/21/d9d721d930ebf7c66e4b71682f68eda8.jpg" alt="Center Image" class="center-image">
+            </a>
+            
+            <!-- Right image -->
+            <a href="https://www.puresoles.ph/products/jordan-1-retro-high-dior" class="image-link">
+                <img src="https://i.pinimg.com/564x/9c/fc/bf/9cfcbf61bb7acf11fdc1bc09d1f74317.jpg" alt="Right Image">
+            </a>
+        </div>
+        
+        <!-- Add the big text below the images -->
+        <div class="big-text">
+            <div class="precision-container">
+                <span class="precision-text">STEPBACK ADIDAS</span>
+                <span class="precision-text">PRECISION 6</span>
+                <span class="precision-text">JORDAN 1 DIOR</span>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My Shopping Website</p>
+        <p>Call Us: 09123456789</p>
+		<p>Email us: cjd.nicolas@sccrmnl.edu.ph</p>
+		<p>Follow Me on Tiktok: @cj28n</p>
+    </footer>
+</body>
+</html>
